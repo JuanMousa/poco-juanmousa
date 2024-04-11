@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excersice HTML</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Logo</a>
+      <h1>Pizzeria SuperMario Brother</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#menu">Menu</a>
+          <ul>
+            <li><a href="#menu-pizza">Pizza</a></li>
+            <li><a href="#menu-drinks">Drinks</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 id="menu">Best Pizza in Italy</h2>
+      <section id="menu-pizza">
+        <h3>Pizzas</h3>
+        <article class="pizza">
+          <header>
+            <h3>Pizza</h3>
+            <img src="" alt="Pizza photo" />
+            <strong class="price">20.00 CHF</strong>
+          </header>
+          <p>our delicious pizza ....</p>
+        </article>
+        <hr />
+        <article class="pizza">
+          <header>
+            <h3>Pizza</h3>
+            <img src="" alt="Pizza photo" />
+            <strong class="price">20.00 CHF</strong>
+          </header>
+          <p>our delicious pizza ....</p>
+        </article>
+        <hr />
+        <article class="pizza">
+          <header>
+            <h3>Pizza</h3>
+            <img src="" alt="Pizza photo" />
+            <strong class="price">20.00 CHF</strong>
+          </header>
+          <p>our delicious pizza ....</p>
+        </article>
+      </section>
+      <hr />
+      <section id="menu-drinks" class="drinks-catagory">
+        <h3>Drinks</h3>
+
+        <section class="drinks-soft">
+          <h3>Soft Drinks</h3>
+          <article>
+            <img src="" alt="cola image" />
+            <p>CocaCola</p>
+            <strong class="price">4.00 CHF, size 33ml</strong>
+          </article>
+          <hr />
+          <article>
+            <img src="" alt="cola image" />
+            <p>CocaCola</p>
+            <strong class="price">5.00 CHF, size 50ml</strong>
+          </article>
+        </section>
+        <hr />
+        <section class="drinks-alkohol">
+          <h3>Alkohol Drinks</h3>
+          <article>
+            <img src="" alt="Bear image" />
+            <p>Heineken</p>
+            <strong class="price">5.00 CHF, 33ml</strong>
+          </article>
+          <hr />
+          <article>
+            <img src="" alt="Bear image" />
+            <p>Heineken</p>
+            <strong class="price">7.00 CHF, 50ml</strong>
+          </article>
+        </section>
+      </section>
+      <section id="contact">
+        <section>
+            <form action="index.html" method="post">
+                <fieldset>
+                  <legend>Contact Us</legend>
+                  <label for="name" >Name</label>
+                  <input type="text" id="name" name="name" autofocus />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required />
+                  <label for="sub">Subject</label>
+                  <input type="text" name="sub" id="sub" />
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Write your massege here..."
+                  >
+                  </textarea>
+                  <input type="submit" name="submit" id="">
+                </fieldset>
+              </form>
+        </section>
+        <section class="open-time">
+            <h3>Open Time</h3>
+            <ul>
+                <li>Monday - Friday: 9:00 AM - 5:00 AM</li>
+                <li>Saturday: 10:00 AM - 4:00 AM</li>
+                <li>Sunday: closed</li>
+            </ul>
+        </section>
+      </section>
+    </main>
+    <footer>
+        <ul>
+            <li>&copy; SuperMario Brothers Resturant</li>
+            <li>Milano, Duomo di Milano 0</li>
+            <li>&phone; 00000000</li>
+        </ul>
+    </footer>
+  </body>
+</html>
