@@ -1,0 +1,25 @@
+*, *::after, *::before {
+    margin: 0;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+
+header {
+    background-color: #80ffdb;
+    padding: 20px;
+}
+
+main {
+    background-color: #4ea8de;
+    padding: 20px;
+}
+
+footer {
+    background-color: #a1cca5;
+    padding: 20px;
+}
