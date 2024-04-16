@@ -1,0 +1,119 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav {
+  position: relative;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    background-color: aqua;
+    padding: 1rem;
+    transition: all 0.3s linear;
+}
+
+
+
+
+ul a {
+    text-decoration: none;
+    font-size: clamp(0.5rem, 8vw, 2rem);
+    flex-wrap: nowrap;
+}
+
+a, a:visited, a:link {
+  color: #419BA4;
+}
+.hamburger {
+  position: relative;
+    cursor: pointer;
+    z-index: 1000;
+}
+  
+ 
+  .hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line {
+    fill: none;
+    stroke: #027A87;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+  #ico , label{
+    display: none;
+  }
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  input:checked + .hamburger svg {
+    transform: rotate(-45deg);
+  }
+  
+  input:checked + .hamburger svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+
+  
+
+
+  
+
+  @media (max-width: 768px) {
+
+
+    ul {
+      height: 100%;
+      flex-direction: column;
+      width: 50%;
+      position: fixed;
+      top:0;
+      right: -100%;
+      justify-content: flex-start;
+      
+      
+    }
+  
+    ul a {
+      margin-left: 2rem;
+    }
+      label{
+      display: block;
+  text-align: right;
+    }
+
+    input:checked ~ nav ul {
+      right: 0;
+      } 
+
+      input:checked + .hamburger svg .line{
+      stroke: #000;
+      }
+  }
