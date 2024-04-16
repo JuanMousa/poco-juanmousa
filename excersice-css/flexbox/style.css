@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+}
+h1 {
+    margin: 50px;
+}
+.flex-box {
+    border: solid 5px #56626E;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+
+.flex-box section {
+    background-color : #59A1AF;
+    border-radius: 5px;
+    flex: 1 1 250px;
+    margin: 10px;
+    padding: 10px;
+}
