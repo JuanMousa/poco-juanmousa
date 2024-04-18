@@ -81,13 +81,7 @@ a, a:visited, a:link {
     stroke-dashoffset: -32.42;
   }
 
-  
-
-
-  
-
   @media (max-width: 768px) {
-
 
     ul {
       height: 100%;
@@ -97,8 +91,7 @@ a, a:visited, a:link {
       top:0;
       right: -100%;
       justify-content: flex-start;
-      
-      
+ 
     }
   
     ul a {

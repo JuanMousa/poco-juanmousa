@@ -1,0 +1,61 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: inherit;
+    scroll-behavior: smooth ;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+main ul {
+  display: flex;
+  list-style: none;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+  
+main li {
+    flex-shrink: 0;
+    font-size: 10rem;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main li:first-child {
+  background-color: aqua;
+}
+
+main li:nth-child(2) {
+  background-color: yellowgreen;
+}
+
+main li:last-child {
+  background-color: burlywood;
+}
+
+footer ul  {
+  display: flex;
+  margin-right: 1rem;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+footer li {
+  margin-right: 1rem;
+}
+footer li a {
+  font-size: 2rem;
+  text-decoration: none;
+}
